@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.simiomobile.myplace.ui.fragment.main.NearByFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/app_rv_place"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageView
+        android:id="@+id/app_iv_map"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|right|end"
+        android:src="@drawable/button_select_location"/>
+
+    <ProgressBar
+        android:id="@+id/app_pb_loading"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:padding="4dp"
+        android:background="@color/transparent50_black"/>
+
+</FrameLayout>
